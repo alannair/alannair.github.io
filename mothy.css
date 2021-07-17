@@ -1,0 +1,211 @@
+BODY
+{
+    MARGIN-TOP: 0pt;
+    FONT-SIZE: 13px;
+    MARGIN-LEFT: 0pt;
+    COLOR: #336666;
+    LINE-HEIGHT: 14pt;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #ffffff
+}
+H3
+{
+    FONT-SIZE: 14pt;
+    LINE-HEIGHT: 24pt;
+    COLOR: #ffffff;
+    BACKGROUND-COLOR: #0000ff;
+    TEXT-INDENT: 14pt;
+}
+TD
+{
+    FONT-SIZE: 10pt;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+P
+{
+    FONT-SIZE: 12pt;
+    COLOR: #ffffff;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+P.links
+{
+    FONT-SIZE: 12pt;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: center
+}
+UL
+{
+    FONT-SIZE: 11pt;
+    COLOR: #000000;
+    LINE-HEIGHT: 14pt;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+LI
+{
+    FONT-SIZE: 11pt;
+    COLOR: #000000;
+    LINE-HEIGHT: 14pt;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+A:link
+{
+    COLOR: red;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+A:visited
+{
+    COLOR: blue;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+A:hover
+{
+    COLOR: #cc33cc;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: underline
+}
+.EventTableTitleRow
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #d2edba
+}
+.EventTableHighElement
+{
+    BACKGROUND-COLOR: #ffffb9
+}
+.EventTableElement
+{
+}
+.RegularText
+{
+    FONT-SIZE: 10pt;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.RegularTextBold
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.RegularTextItalic
+{
+    FONT-SIZE: 10pt;
+    COLOR: #000000;
+    FONT-STYLE: italic;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.RegularTextBoldItalic
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    COLOR: #000000;
+    FONT-STYLE: italic;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.Heading
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 14pt;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.SmallItalText
+{
+    FONT-SIZE: 8pt;
+    COLOR: #000000;
+    FONT-STYLE: italic;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.FeatureHeadline
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.FeatureSubHead
+{
+    FONT-SIZE: 12pt;
+    COLOR: #000000;
+    FONT-STYLE: italic;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.FeatureByLine
+{
+    FONT-SIZE: 10pt;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.RedRegularTextBold
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    COLOR: #ff0000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.Disclaimer
+{
+    FONT-SIZE: 8pt;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.PhotoCaption
+{
+    FONT-SIZE: 8pt;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.versionText
+{
+    FONT-SIZE: 6pt;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.warningText
+{
+    FONT-SIZE: 10pt;
+    COLOR: #ff0000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.MainTitleText
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 14pt;
+    COLOR: blue
+}
+.email
+{
+    COLOR: blue;
+    FONT-FAMILY: Tahoma;
+    TEXT-DECORATION: underline
+}
+
+body{ min-height:97vh; margin:0; position:relative; }
+header{ min-height:50px; background:lightcyan; }
+footer{ background:black; }
+
+/* Trick: */
+body {
+  position: relative;
+  color: white;
+  background-color: black;
+}
+
+body::after {
+  content: '';
+  display: block;
+  height: 50px; /* Set same as footer's height */
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 75%;
+  height: 50px;
+}
