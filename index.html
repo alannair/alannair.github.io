@@ -31,7 +31,6 @@
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		  <ul class="nav navbar-nav">
 				  <li><a href="index.html">Home</a></li>
-				  <li><a href="#projects">Projects</a></li>
 				  <li><a href="#publications">Publications</a></li>
 				  <li><a href="resources/CV.pdf">CV</a></li>
 		  </ul>
@@ -42,20 +41,24 @@
   <!-- Page Content -->
     <div class="container">
         <div class="row">
-            <div class="col-md-8" style="height: 57vh;">
+            <div class="col-md-8" style="height: 62vh;">
                 <img src="resources/dp.jpg" style="height: 40vh"><br>
 
                 <div style="margin-top:3%; text-align:justify;">
                   <p> Call me <b>Alan</b>.</p>
                   <p> I am a Ph.D student at the Informatics Department, University of Edinburgh.</p>
-                  <p> I am supervised by <a href="http://www.barbalace.it/antonio/">Dr. Antonio Barbalace</a> and <a href="https://homepages.inf.ed.ac.uk/bgrot/">Dr. Boris Grot</a>.</p>
-                  <p> My research interests span computer architecture, operating systems, and emerging technologies, with a focus on heterogenous and disaggregated memory organization. I am currently exploring the optimization space opened up by CXL-enabled memory expansion, pooling, and disaggregation.</p>
+                  <p> I am supervised by <a href="http://www.barbalace.it/antonio/">Dr. Antonio Barbalace</a> 
+											and <a href="https://homepages.inf.ed.ac.uk/bgrot/">Dr. Boris Grot</a>.</p>
+                  <p> My research interests span computer architecture, operating systems, and emerging technologies, 
+											with a focus on tiered and disaggregated memory organization. 
+											I am currently exploring the optimization space opened up by 
+											CXL-enabled memory expansion, pooling, and disaggregation.</p>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div style="font-family: 'Oswald', sans-serif; font-size: 32px;"><b>Alan Nair</b></div><br>
-                <p><b>alan.nair at ed.ac.uk</b><br>
+                <p><b>alan.nair@ed.ac.uk</b><br>
                 <p>School of Informatics<br>
                 University of Edinburgh<br>
                 <a href="https://www.linkedin.com/in/alan-nair-b5bb88162" class="social-icon si-rounded si-small si-linkedin">
@@ -72,57 +75,60 @@
                 </p>
             </div>
 
-            <!-- Links on the Sidebar -->
-            <!-- <div class="col-md-4" style="margin-top:2%">
-              <dd><a href="#">Google Scholar</a></dd>
-              <dd><a href="#">Twitter</a></dd>
-              <dd><a href="#">LinkedIn</a></dd>
-            </div> -->
-
             <!-- Publications -->
-            <div class="col-md-8" style="height: 10vh;">
+            <div class="col-md-8" style="height: 20vh;">
                 <h2 id="publications">Publications</h2>
 
-                <ul>
-                  <li class="paper" words="add, your, keywords, here">[2023] <a href="https://arxiv.org/pdf/2311.10275.pdf">Telescope: Telemetry at Terabyte Scale</a>   Alan Nair, Sandeep Kumar, Aravinda Prasad, Andy Rudoff, and Sreenivas Subramoney</li>
-                </ul>
+								<ul>
+									<li> <font size="+2">2024</font>
+										<ul>
+											<li class="paper" words="add, your, keywords, here">
+												<font size="+1">
+												<a href="https://www.usenix.org/conference/atc24/presentation/nair">USENIX ATC 24</a><br
+												<b>Telescope: Telemetry for Gargantuan Memory Footprint Applications</b>
+												</font><br>
+												<i>Alan Nair</i>, Sandeep Kumar, Aravinda Prasad, Ying Huang, Andy Rudoff, and Sreenivas Subramoney.<br>
+												<a href="resources/paper/Telescope-ATC24.pdf">Paper</a> &emsp; 
+													<a href="resources/slides/Telescope-ATC24.pdf">Slides</a> &emsp;
+													<a href="">Video</a> &emsp;
+													<button onclick="telescopebibtex()" style="background-color: black;">BIBTEX</button>
+													<br>
+												<a href="https://www.usenix.org/publications/loginonline/telescope-profiling-memory-access-patterns-terabyte-scale">Usenix ;LOGIN; Article</a>
+													Telescope: Profiling Memory Access Patterns at the Terabyte-scale <br>
+												<a href="https://lore.kernel.org/linux-mm/MW5PR11MB5907791BEAA13D89C8B3948DF290A@MW5PR11MB5907.namprd11.prod.outlook.com/T/">Kernel Lore</a>
+													Upstreaming Telescope to the Linux Kernel
+											</li>
+										</ul>
+									</li>
+								</ul>
 
-                <!-- <strong>Peer-reviewed</strong><br/>
-                <ul>
-                <li class="paper" words="add, your, keywords, here"><a href="#">Full title</a> Names of the authors</li>
-                </ul>
-
-                <strong>Technical Reports</strong><br/>
-                <ul>
-                <li class="paper" words="add, your, keywords, here"><a href="#">Full title</a>. Details of the report</li>
-                </ul> -->
-            </div>
-
-            <!-- Projects -->
-            <div class="col-md-8" style="height: 10vh;">
-                <h2 id="projects">Projects</h2>
-
-                <strong>Active</strong><br/>
-                <ul>
-                  <li class="project" words="serverless"><a href="https://github.com/auto-ndp/faasm">Faasm Offloading</a>: A Cluster-wide FAAS runtime that enables on-the-fly offloading of segments of Function code for Near-Storage Processing</li>
-                  <li class="project" words="serverless"><a href="https://github.com/vhive-serverless/vSwarm">vSwarm</a>: A collection of ready-to-run serverless benchmarks part of the vHive Ecosystem</li>
-                </ul>
-
-                <strong>Past</strong><br/>
-                <ul>
-                  <li class="project" words="nvm"><a href="https://github.com/alannair/ChampSim-VANS">ChampSim-VANS</a>: Integrated ChampSim Cache Hierarchy + DRAM simulator frontend with VANS Non-Volatile Memory Simulator Backend</li>
-                  <li class="project" words="nvm"><a href="#">Finding the Optimal Blocking Factor for Convolutions</a>: Dual Degree Thesis [<a href="https://github.com/prospar/alan-technical-report">Technical Report</a>][<a href="https://github.com/prospar/plaidml/tree/prospar">Source Code</a>]</li>
-                </ul>
             </div>
 
         </div>
 
 
     </div>
-    <!-- /.container -->
 
-    <!-- Other people may like it too! -->
-    <!-- <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a> -->
+<script>
+	function telescopebibtex() {
+	  var copyText = "@inproceedings {288747,\n"+
+			"author = {Alan Nair and Sandeep Kumar and Aravinda Prasad and Ying Huang and Andy Rudoff and Sreenivas Subramoney},\n"+
+			"title = {{Telescope}: Telemetry for Gargantuan Memory Footprint Applications},\n"+
+			"booktitle = {2024 USENIX Annual Technical Conference (USENIX ATC 24)},\n"+
+			"year = {2024},\n"+
+			"isbn = {978-1-939133-35-9},\n"+
+			"address = {Santa Clara, CA},\n"+
+			"pages = {17--33},\n"+
+			"url = {https://www.usenix.org/conference/atc24/presentation/nair},\n"+
+			"publisher = {USENIX Association},\n"+
+			"month = jul\n"+
+			"}";
+
+	  //copyText.select();
+	  //copyText.setSelectionRange(0, 99999); // For mobile devices
+	  navigator.clipboard.writeText(copyText);
+	}
+</script>
 
 </body>
 
