@@ -41,7 +41,8 @@
   <!-- Page Content -->
     <div class="container">
         <div class="row">
-            <div class="col-md-8" style="height: 62vh;">
+            <div class="col-md-8">
+						<!-- </div> style="height: 80vh;"> -->
                 <img src="resources/dp.jpg" style="height: 40vh"><br>
 
                 <div style="margin-top:3%; text-align:justify;">
@@ -90,13 +91,27 @@
 												<i>Alan Nair</i>, Sandeep Kumar, Aravinda Prasad, Ying Huang, Andy Rudoff, and Sreenivas Subramoney.<br>
 												<a href="resources/paper/Telescope-ATC24.pdf">Paper</a> &emsp; 
 													<a href="resources/slides/Telescope-ATC24.pdf">Slides</a> &emsp;
-													<a href="">Video</a> &emsp;
+													<a href="https://www.youtube.com/watch?v=vmKiGUma5OQ">Video</a> &emsp;
 													<button onclick="telescopebibtex()" style="background-color: black;">BIBTEX</button>
 													<br>
 												<a href="https://www.usenix.org/publications/loginonline/telescope-profiling-memory-access-patterns-terabyte-scale">Usenix ;LOGIN; Article</a>
 													Telescope: Profiling Memory Access Patterns at the Terabyte-scale <br>
-												<a href="https://lore.kernel.org/linux-mm/MW5PR11MB5907791BEAA13D89C8B3948DF290A@MW5PR11MB5907.namprd11.prod.outlook.com/T/">Kernel Lore</a>
+												<a href="https://lore.kernel.org/linux-mm/MW5PR11MB5907791BEAA13D89C8B3948DF290A@MW5PR11MB5907.namprd11.prod.outlook.com/T/">Kernel Lore + Source Code</a>
 													Upstreaming Telescope to the Linux Kernel
+											</li>
+											<br>
+											<li class="paper" words="add, your, keywords, here">
+												<font size="+1">
+												<a href="">ACM Middleware 24</a><br
+												<b>Near-Storage Processing in FaaS with Funclets</b>
+												</font><br>
+												<i>Alan Nair</i>, Raven Szewczyk, Donald Jennings, and Antonio Barbalace.<br>
+												<a href="resources/paper/Funclets_Middleware_24.pdf">Paper</a> &emsp; 
+													<a href="">Slides</a> &emsp;
+													<a href="">Video</a> &emsp;
+													<button onclick="telescopefunclets()" style="background-color: black;">BIBTEX</button>
+													<br>
+												<a href="https://github.com/auto-ndp/faasm">Source Code</a>
 											</li>
 										</ul>
 									</li>
@@ -122,6 +137,24 @@
 			"url = {https://www.usenix.org/conference/atc24/presentation/nair},\n"+
 			"publisher = {USENIX Association},\n"+
 			"month = jul\n"+
+			"}";
+
+	  //copyText.select();
+	  //copyText.setSelectionRange(0, 99999); // For mobile devices
+	  navigator.clipboard.writeText(copyText);
+	}
+	function funcletsbibtex() {
+	  var copyText = "@inproceedings {298538,\n"+
+			"author = {Alan Nair and Raven Szewczyk and Donald Jennings and Antonio Barbalace},\n"+
+			"title = {Near-Storage Processing in FaaS with Funclets},\n"+
+			"booktitle = {25th International Middleware Conference (MIDDLEWARE '24)},\n"+
+			"year = {2024},\n"+
+			"isbn = {979-8-4007-0623-3/24/12},\n"+
+			"address = {Hong Kong, Hong Kong},\n"+
+			"pages = {409--424},\n"+
+			"url = {},\n"+
+			"publisher = {ACM},\n"+
+			"month = dec\n"+
 			"}";
 
 	  //copyText.select();
